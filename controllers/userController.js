@@ -10,19 +10,20 @@ const request = require('request');
 // });
 const userActions = {
   verify: asyncMiddleware(async (req, res) => {
+    console.log(req.body);
     if (req.body.provider === 'GOOGLE') {
 
       request('https://oauth2.googleapis.com/tokeninfo?id_token=' + req.body.idToken, function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        console.log('body:', body); // Print the HTML for the Google homepage.
+        // console.log('body:', body);   Print the HTML for the Google homepage.
 
         let data = {
           token: 'sdjsjdhsd87dksndsd',
           verfied: true
         };
 
-        res.status(status.server.accepted).json({
+        res.status(status.success.accepted).json({
           message: 'Success',
           data
         });
@@ -33,14 +34,14 @@ const userActions = {
       request('https://graph.facebook.com/me?access_token=' + req.body.authToken, function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-        console.log('body:', body); // Print the HTML for the Google homepage.
+        // console.log('body:', body);   Print the HTML for the Google homepage.
 
         let data = {
           token: 'sdjsjdhsd87dksndsd',
           verfied: true
         };
 
-        res.status(status.server.accepted).json({
+        res.status(status.success.accepted).json({
           message: 'Success',
           data
         });
