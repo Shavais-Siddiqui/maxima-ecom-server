@@ -3,13 +3,14 @@ const jsonConfig = require('../config/config.json');
 
 function initialize(env) {
   let config = jsonConfig[env];
-  mongoose.connect(config.db, { useNewUrlParser: true });
+  mongoose.connect(config.db, { useNewUrlParser: true, useUnifiedTopology: true });
   var db = mongoose.connection;
   db.on('error', console.error.bind(console, 'connection error:'));
   db.once('open', function () {
-    console.log('We are connected!');
+    console.log('Database is connected!');
   });
 }
+
 module.exports = {
   initialize
 };

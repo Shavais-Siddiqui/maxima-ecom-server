@@ -12,6 +12,9 @@ var userSchema = new Schema({
     },
     password: {
         type: String,
+    },
+    provider: {
+        type: String,
         required: true
     }
 });
