@@ -4,8 +4,11 @@ const config = require('./config/configuration');
 const port = process.env.PORT || 3000;
 const environment = process.env.NODE_ENV || 'development';
 const routes = require('./routes');
-
+const cors = require('cors');
 config.initialize(environment);
+
+// Allowing CORS
+app.use(cors());
 
 // Body Parser For Parsing The Request Body
 app.use(express.json());
