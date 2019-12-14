@@ -7,5 +7,10 @@ router.get('/test', (req, res) => {
 });
 
 router.post('/check-social-login', UserController.verify);
+router.post('/add-user', UserController.register);
+router.post('/login', UserController.login);
+router.post('/verify-email/:id', UserController.emailVerification);
+
+
 
 module.exports = router;

@@ -12,10 +12,14 @@ var userSchema = new Schema({
     },
     password: {
         type: String,
+        select: false
     },
     provider: {
         type: String,
-        required: true
+    },
+    active: {
+        type: Boolean,
+        default: false
     }
 });
 
