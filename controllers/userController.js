@@ -78,7 +78,7 @@ const userActions = {
           }
         });
 
-        let rand = Math.floor((Math.random() * 100) + 54);
+        let rand = Math.floor((Math.random() * 1000) + 55);
 
         console.log('Rand', rand);
         console.log('Host:', req.get('host'));
@@ -92,6 +92,13 @@ const userActions = {
         };
         let sentMail = await smtpTransport.sendMail(mailOptions);
         console.log(sentMail);
+
+        // Save Token In The Db
+        let verification = new VerificationModel({
+          userId: savedUser.id,
+          token: savedUser.id + rand
+        });
+        await verification.save();
 
         // Remove Password From Object
         let addedUser = savedUser.toObject();
@@ -110,7 +117,7 @@ const userActions = {
     console.log(id);
     let verification = await VerificationModel.findOne({ userId: userId });
     if (verification.token == req.params.id) {
-      let user = await VerificationModel.findOneAndUpdate(userId, {
+      let user = await UserModel.findOneAndUpdate(userId, {
         active: true
       });
       if (user) {
