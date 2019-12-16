@@ -71,9 +71,10 @@ const userActions = {
         // Send Verification Mail
         let smtpTransport = nodemailer.createTransport({
           service: "Gmail",
+          port: 465,
           auth: {
-            user: "ayazhussainbs@gmail.com",
-            pass: "codedecoder"
+            user: "maximaecommerce12@gmail.com",
+            pass: "coders123"
           }
         });
 
@@ -84,7 +85,7 @@ const userActions = {
         let link = "https://maximaecommerceclient.herokuapp.com" + "/verification?key=" + savedUser.id + rand;
         console.log(link);
         let mailOptions = {
-          from: 'ayazhussainbs@gmail.com',
+          from: 'maximaecommerce12@gmail.com',
           to: req.body.email,
           subject: "Please confirm your Email account to continue with Ecommerce",
           html: "Hello" + savedUser.name + "<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
@@ -148,7 +149,32 @@ const userActions = {
         message: 'User Not Found'
       });
     }
-  })
+  }),
+
+  testMail: async (req, res) => {
+    let smtpTransport = nodemailer.createTransport({
+      service: "Gmail",
+      auth: {
+        user: "maximaecommerce12@gmail.com",
+        pass: "coders123"
+      }
+    });
+
+    let rand = Math.floor((Math.random() * 100) + 54);
+
+    console.log('Rand', rand);
+    console.log('Host:', req.get('host'));
+    let link = "https://maximaecommerceclient.herokuapp.com" + "/verification?key=" + 98398 + rand;
+    console.log(link);
+    let mailOptions = {
+      from: 'maximaecommerce12@gmail.com',
+      to: 'mustafa_9997@yahoo.com',
+      subject: "Please confirm your Email account to continue with Ecommerce",
+      html: "Hello" + ' Mutsafa' + "<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
+    };
+    let sentMail = await smtpTransport.sendMail(mailOptions);
+    console.log(sentMail);
+  }
 };
 
 
