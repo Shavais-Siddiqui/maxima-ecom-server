@@ -19,17 +19,20 @@ const userActions = {
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         // console.log('body:', body);   Print the HTML for the Google homepage.
 
-        let data = {
-          token: 'sdjsjdhsd87dksndsd',
-          verfied: true
-        };
+        let newUser = new UserModel({
+          name: req.body.name,
+          email: req.body.email,
+          provider: 'GOOGLE',
+          active: true
+        });
+
+        let user = await newUser.save();
 
         res.status(status.success.accepted).json({
           message: 'Verified',
-          data
+          data: user
         });
       });
-
     } else if (req.body.provider === 'FACEBOOK') {
 
       request('https://graph.facebook.com/me?access_token=' + req.body.authToken, function (error, response, body) {
@@ -37,17 +40,20 @@ const userActions = {
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         // console.log('body:', body);   Print the HTML for the Google homepage.
 
-        let data = {
-          token: 'sdjsjdhsd87dksndsd',
-          verfied: true
-        };
+        let newUser = new UserModel({
+          name: req.body.name,
+          email: req.body.email,
+          provider: 'FACEBOOK',
+          active: true
+        });
+
+       let user = await newUser.save();
 
         res.status(status.success.accepted).json({
           message: 'Verified',
-          data
+          data: user
         });
       });
-
     }
   }),
 
@@ -63,7 +69,8 @@ const userActions = {
       let newUser = new UserModel({
         name: req.body.name,
         email: req.body.email,
-        password: hashedPassword
+        password: hashedPassword,
+        provider: 'MAIL'
       });
       let savedUser = await newUser.save();
       if (savedUser) {
@@ -88,7 +95,7 @@ const userActions = {
           from: 'maximaecommerce12@gmail.com',
           to: req.body.email,
           subject: "Please confirm your Email account to continue with Ecommerce",
-          html: "Hello" + savedUser.name + "<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
+          html: "Hello" + ' ' + savedUser.name + "<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
         };
         let sentMail = await smtpTransport.sendMail(mailOptions);
         console.log(sentMail);
@@ -114,12 +121,12 @@ const userActions = {
   emailVerification: asyncMiddleware(async (req, res) => {
     let id = req.params.id;
     let userId = id.slice(0, 24);
-    console.log(id);
     let verification = await VerificationModel.findOne({ userId: userId });
     if (verification.token == req.params.id) {
-      let user = await UserModel.findOneAndUpdate(userId, {
+      console.log('verified');
+      let user = await UserModel.findByIdAndUpdate(userId, {
         active: true
-      });
+      }, { new: true });
       if (user) {
         res.status(status.success.accepted).json({
           message: 'Approved',
