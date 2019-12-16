@@ -14,7 +14,7 @@ const userActions = {
     console.log(req.body);
     if (req.body.provider === 'GOOGLE') {
 
-      request('https://oauth2.googleapis.com/tokeninfo?id_token=' + req.body.idToken, function (error, response, body) {
+      request('https://oauth2.googleapis.com/tokeninfo?id_token=' + req.body.idToken, async function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         // console.log('body:', body);   Print the HTML for the Google homepage.
@@ -35,7 +35,7 @@ const userActions = {
       });
     } else if (req.body.provider === 'FACEBOOK') {
 
-      request('https://graph.facebook.com/me?access_token=' + req.body.authToken, function (error, response, body) {
+      request('https://graph.facebook.com/me?access_token=' + req.body.authToken, async function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         // console.log('body:', body);   Print the HTML for the Google homepage.
@@ -47,7 +47,7 @@ const userActions = {
           active: true
         });
 
-       let user = await newUser.save();
+        let user = await newUser.save();
 
         res.status(status.success.accepted).json({
           message: 'Verified',
@@ -86,9 +86,6 @@ const userActions = {
         });
 
         let rand = Math.floor((Math.random() * 1000) + 55);
-
-        console.log('Rand', rand);
-        console.log('Host:', req.get('host'));
         let link = "https://maximaecommerceclient.herokuapp.com" + "/verification?key=" + savedUser.id + rand;
         console.log(link);
         let mailOptions = {
