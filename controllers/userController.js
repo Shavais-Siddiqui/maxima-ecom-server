@@ -152,7 +152,7 @@ const userActions = {
         res.status(status.success.accepted).json({
           message: 'Logged In Successfully',
           data: loggedUser,
-          token: 'Bearer ' + await jwt.signJwt({ id: savedUser.id })
+          token: 'Bearer ' + await jwt.signJwt({ id: user.id })
         });
       } else {
         res.status(status.client.badRequest).json({
