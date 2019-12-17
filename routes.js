@@ -9,11 +9,11 @@ router.get('/test', jwt.verifyJwt, (req, res) => {
 
 router.post('/check-social-login', UserController.verify);
 router.post('/add-user', UserController.register);
-router.post('/login', UserController.login);
+router.post('/login', jwt.verifyJwt, UserController.login);
 router.post('/verify-email/:id', UserController.emailVerification);
 // router.post('/testMail', UserController.testMail);
 // router.post('/testJwt', UserController.testJwt);
-router.get('/get-data', UserController.getData);
+router.get('/get-data', jwt.verifyJwt, UserController.getData);
 
 
 
