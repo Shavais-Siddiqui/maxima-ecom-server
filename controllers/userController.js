@@ -150,6 +150,7 @@ const userActions = {
     let verification = await VerificationModel.findOne({ userId: userId });
     if (verification.token == req.params.id) {
       console.log('verified');
+      await VerificationModel.findByIdAndRemove(verification.id);
       let user = await UserModel.findByIdAndUpdate(userId, {
         active: true
       }, { new: true });
