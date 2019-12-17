@@ -230,10 +230,6 @@ const userActions = {
       });
     }
   }),
-
-  // testJwt: asyncMiddleware(async (req, res) => {
-  // }
-  // )
 };
 
 

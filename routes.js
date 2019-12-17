@@ -12,7 +12,6 @@ router.post('/add-user', UserController.register);
 router.post('/login', UserController.login);
 router.post('/verify-email/:id', UserController.emailVerification);
 // router.post('/testMail', UserController.testMail);
-// router.post('/testJwt', UserController.testJwt);
 router.get('/get-data', jwt.verifyJwt, UserController.getData);
 
 
