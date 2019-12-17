@@ -19,20 +19,33 @@ const userActions = {
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         // console.log('body:', body);   Print the HTML for the Google homepage.
 
-        let newUser = new UserModel({
-          name: req.body.name,
-          email: req.body.email,
-          provider: 'GOOGLE',
-          active: true
-        });
-
-        let user = await newUser.save();
-
-        res.status(status.success.accepted).json({
-          message: 'Verified',
-          data: user,
-          token: await jwt.signJwt({ id: user.id })
-        });
+        if (response.statusCode == 200) {
+          let user = await UserModel.findOne({ email: req.body.email });
+          if (user) {
+            res.status(status.success.accepted).json({
+              message: 'Already Exists',
+              data: user,
+              token: 'Bearer ' + await jwt.signJwt({ id: user.id })
+            });
+          } else {
+            let newUser = new UserModel({
+              name: req.body.name,
+              email: req.body.email,
+              provider: 'GOOGLE',
+              active: true
+            });
+            let user = await newUser.save();
+            res.status(status.success.created).json({
+              message: 'Verified',
+              data: user,
+              token: 'Bearer ' + await jwt.signJwt({ id: user.id })
+            });
+          }
+        } else {
+          res.status(status.client.unAuthorized).json({
+            message: 'Un-Authorized Login',
+          });
+        }
       });
     } else if (req.body.provider === 'FACEBOOK') {
 
@@ -41,20 +54,33 @@ const userActions = {
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         // console.log('body:', body);   Print the HTML for the Google homepage.
 
-        let newUser = new UserModel({
-          name: req.body.name,
-          email: req.body.email,
-          provider: 'FACEBOOK',
-          active: true
-        });
-
-        let user = await newUser.save();
-
-        res.status(status.success.accepted).json({
-          message: 'Verified',
-          data: user,
-          token: await jwt.signJwt({ id: user.id })
-        });
+        if (response.statusCode == 200) {
+          let user = await UserModel.findOne({ email: req.body.email });
+          if (user) {
+            res.status(status.success.accepted).json({
+              message: 'Already Exists',
+              data: user,
+              token: 'Bearer ' + await jwt.signJwt({ id: user.id })
+            });
+          } else {
+            let newUser = new UserModel({
+              name: req.body.name,
+              email: req.body.email,
+              provider: 'FACEBOOK',
+              active: true
+            });
+            let user = await newUser.save();
+            res.status(status.success.created).json({
+              message: 'Verified',
+              data: user,
+              token: 'Bearer ' + await jwt.signJwt({ id: user.id })
+            });
+          }
+        } else {
+          res.status(status.client.unAuthorized).json({
+            message: 'Un-Authorized Login',
+          });
+        }
       });
     }
   }),
