@@ -5,7 +5,7 @@ const request = require('request');
 const passwordUtils = require('../utils/passwordHash');
 const nodemailer = require("nodemailer");
 const VerificationModel = require('../models/email-verification');
-
+const jwt = require('../utils/jwt');
 // https://graph.facebook.com/me?access_token=
 // https://oauth2.googleapis.com/tokeninfo?id_token=
 
@@ -30,7 +30,8 @@ const userActions = {
 
         res.status(status.success.accepted).json({
           message: 'Verified',
-          data: user
+          data: user,
+          token: await jwt.signJwt({ id: user.id })
         });
       });
     } else if (req.body.provider === 'FACEBOOK') {
@@ -51,7 +52,8 @@ const userActions = {
 
         res.status(status.success.accepted).json({
           message: 'Verified',
-          data: user
+          data: user,
+          token: await jwt.signJwt({ id: user.id })
         });
       });
     }
@@ -109,7 +111,8 @@ const userActions = {
         delete addedUser.password;
         res.status(status.success.created).json({
           message: 'User Created Successfully',
-          data: addedUser
+          data: addedUser,
+          token: 'Bearer ' + await jwt.signJwt({ id: savedUser.id })
         });
       }
     }
@@ -148,7 +151,8 @@ const userActions = {
         delete loggedUser.password;
         res.status(status.success.accepted).json({
           message: 'Logged In Successfully',
-          data: loggedUser
+          data: loggedUser,
+          token: 'Bearer ' + await jwt.signJwt({ id: savedUser.id })
         });
       } else {
         res.status(status.client.badRequest).json({
@@ -162,30 +166,48 @@ const userActions = {
     }
   }),
 
-  testMail: async (req, res) => {
-    let smtpTransport = nodemailer.createTransport({
-      service: "Gmail",
-      auth: {
-        user: "maximaecommerce12@gmail.com",
-        pass: "coders123"
-      }
-    });
+  // testMail: async (req, res) => {
+  //   let smtpTransport = nodemailer.createTransport({
+  //     service: "Gmail",
+  //     auth: {
+  //       user: "maximaecommerce12@gmail.com",
+  //       pass: "coders123"
+  //     }
+  //   });
 
-    let rand = Math.floor((Math.random() * 100) + 54);
+  //   let rand = Math.floor((Math.random() * 100) + 54);
 
-    console.log('Rand', rand);
-    console.log('Host:', req.get('host'));
-    let link = "https://maximaecommerceclient.herokuapp.com" + "/verification?key=" + 98398 + rand;
-    console.log(link);
-    let mailOptions = {
-      from: 'maximaecommerce12@gmail.com',
-      to: 'mustafa_9997@yahoo.com',
-      subject: "Please confirm your Email account to continue with Ecommerce",
-      html: "Hello" + ' Mutsafa' + "<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
-    };
-    let sentMail = await smtpTransport.sendMail(mailOptions);
-    console.log(sentMail);
-  }
+  //   console.log('Rand', rand);
+  //   console.log('Host:', req.get('host'));
+  //   let link = "https://maximaecommerceclient.herokuapp.com" + "/verification?key=" + 98398 + rand;
+  //   console.log(link);
+  //   let mailOptions = {
+  //     from: 'maximaecommerce12@gmail.com',
+  //     to: 'mustafa_9997@yahoo.com',
+  //     subject: "Please confirm your Email account to continue with Ecommerce",
+  //     html: "Hello" + ' Mutsafa' + "<br> Please Click on the link to verify your email.<br><a href=" + link + ">Click here to verify</a>"
+  //   };
+  //   let sentMail = await smtpTransport.sendMail(mailOptions);
+  //   console.log(sentMail);
+  // },
+
+  getData: asyncMiddleware(async (req, res) => {
+    let user = await UserModel.findById(req.decoded.id);
+    if (user) {
+      res.status(status.success.accepted).json({
+        message: 'User Data',
+        data: user
+      });
+    } else {
+      res.status(status.client.notFound).json({
+        message: 'User Not Found'
+      });
+    }
+  }),
+
+  // testJwt: asyncMiddleware(async (req, res) => {
+  // }
+  // )
 };
 
 

@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const environment = process.env.NODE_ENV || 'development';
 const routes = require('./routes');
 const cors = require('cors');
+const statusCodes = require('./utils/statusCodes');
 config.initialize(environment);
 
 // Allowing CORS
@@ -18,8 +19,9 @@ app.use('/api', routes);
 
 // Express Error Handler
 app.use(function (err, req, res, next) {
-  console.log(err.message);
-  res.status().json({
+  console.log('Hello');
+  // console.log(err.message);
+  res.status(statusCodes.client.badRequest).json({
     status: 'Failure',
     message: err.message
   });
