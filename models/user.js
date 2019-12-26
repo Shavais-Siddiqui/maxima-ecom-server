@@ -20,7 +20,15 @@ var userSchema = new Schema({
     active: {
         type: Boolean,
         default: false
-    }
-});
+    },
+    cart: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    }],
+    wishlist: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product'
+    }]
+}, { versionKey: false });
 
 module.exports = mongoose.model('User', userSchema);

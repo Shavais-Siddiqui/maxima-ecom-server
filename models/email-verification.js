@@ -8,6 +8,6 @@ var userSchema = new Schema({
     token: {
         type: String
     }
-});
+}, { versionKey: false });
 
 module.exports = mongoose.model('EmailVerification', userSchema);

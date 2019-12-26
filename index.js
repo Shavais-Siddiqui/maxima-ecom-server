@@ -19,7 +19,7 @@ app.use('/api', routes);
 
 // Express Error Handler
 app.use(function (err, req, res, next) {
-  console.log('Hello');
+  console.log('Error Occured');
   // console.log(err.message);
   res.status(statusCodes.client.badRequest).json({
     status: 'Failure',

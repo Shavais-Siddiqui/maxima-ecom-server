@@ -1,0 +1,2641 @@
+{
+    "provinces": [
+        {
+            "name": "Azad Kashmir"
+        },
+        {
+            "name": "Balochistan"
+        },
+        {
+            "name": "Federally Administered Tribal Areas"
+        },
+        {
+            "name": "Gilgit-Baltistan"
+        },
+        {
+            "name": "Islamabad"
+        },
+        {
+            "name": "Khyber Pakhtunkhwa"
+        },
+        {
+            "name": "Punjab"
+        },
+        {
+            "name": "Sindh"
+        }
+    ],
+    "city": [
+        {
+            "province": "Azad Kashmir",
+            "cities": [
+                {
+                    "name": "Bagh"
+                },
+                {
+                    "name": "Barnala"
+                },
+                {
+                    "name": "Bhimber"
+                },
+                {
+                    "name": "Chak Swari"
+                },
+                {
+                    "name": "Dadyal"
+                },
+                {
+                    "name": "Hajira"
+                },
+                {
+                    "name": "Hattian"
+                },
+                {
+                    "name": "Islamgarh"
+                },
+                {
+                    "name": "Jandala"
+                },
+                {
+                    "name": "Jing"
+                },
+                {
+                    "name": "Kalyal"
+                },
+                {
+                    "name": "Kolti"
+                },
+                {
+                    "name": "Mangla"
+                },
+                {
+                    "name": "Mirpur A.K - New Mirpur City"
+                },
+                {
+                    "name": "Muzafarabad"
+                },
+                {
+                    "name": "Pallandri"
+                },
+                {
+                    "name": "Rawalakot"
+                }
+            ]
+        },
+        {
+            "province": "Balochistan",
+            "cities": [
+                {
+                    "name": "Chaman"
+                },
+                {
+                    "name": "Dalbandin"
+                },
+                {
+                    "name": "Dera Allahyar"
+                },
+                {
+                    "name": "Dera Murad Jamali"
+                },
+                {
+                    "name": "Dhadar"
+                },
+                {
+                    "name": "Gwadar"
+                },
+                {
+                    "name": "Harnai"
+                },
+                {
+                    "name": "Hub"
+                },
+                {
+                    "name": "Jaffarabad"
+                },
+                {
+                    "name": "Kallat"
+                },
+                {
+                    "name": "Kanozai"
+                },
+                {
+                    "name": "Kharan"
+                },
+                {
+                    "name": "Khuzdar"
+                },
+                {
+                    "name": "Kohlu"
+                },
+                {
+                    "name": "Lasbella"
+                },
+                {
+                    "name": "Loralai"
+                },
+                {
+                    "name": "Mastung"
+                },
+                {
+                    "name": "Miri Kalat"
+                },
+                {
+                    "name": "Mithani"
+                },
+                {
+                    "name": "Muslim Bagh"
+                },
+                {
+                    "name": "Nushki"
+                },
+                {
+                    "name": "Panj Gur"
+                },
+                {
+                    "name": "Pasni"
+                },
+                {
+                    "name": "Pishin"
+                },
+                {
+                    "name": "Quetta"
+                },
+                {
+                    "name": "Sibbi"
+                },
+                {
+                    "name": "Sorab"
+                },
+                {
+                    "name": "Sui"
+                },
+                {
+                    "name": "Turbat"
+                },
+                {
+                    "name": "Usta Mohammad"
+                },
+                {
+                    "name": "Uthal"
+                },
+                {
+                    "name": "Winder"
+                },
+                {
+                    "name": "Zhob"
+                },
+                {
+                    "name": "Zia Abad"
+                }
+            ]
+        },
+        {
+            "province": "Federally Administered Tribal Areas",
+            "cities": [
+                {
+                    "name": "Darra Adam Khel"
+                },
+                {
+                    "name": "Khar Bajur Agency"
+                },
+                {
+                    "name": "Miran Shah"
+                },
+                {
+                    "name": "Thana Malakand Agency"
+                }
+            ]
+        },
+        {
+            "province": "Gilgit-Baltistan",
+            "cities": [
+                {
+                    "name": "Chilas"
+                },
+                {
+                    "name": "Gamba Skardu"
+                },
+                {
+                    "name": "Gilgit"
+                },
+                {
+                    "name": "Khaplu"
+                },
+                {
+                    "name": "Skardu"
+                }
+            ]
+        },
+        {
+            "province": "Islamabad",
+            "cities": [
+                {
+                    "name": "Islamabad - E"
+                },
+                {
+                    "name": "Islamabad - F"
+                },
+                {
+                    "name": "Islamabad - G"
+                },
+                {
+                    "name": "Islamabad - GhauriTown"
+                },
+                {
+                    "name": "Islamabad - H"
+                },
+                {
+                    "name": "Islamabad - I"
+                },
+                {
+                    "name": "Islamabad - Other"
+                }
+            ]
+        },
+        {
+            "province": "Khyber Pakhtunkhwa",
+            "cities": [
+                {
+                    "name": "Abdara"
+                },
+                {
+                    "name": "Abottabad"
+                },
+                {
+                    "name": "Abuha"
+                },
+                {
+                    "name": "Akora Khattak"
+                },
+                {
+                    "name": "Aman Dara"
+                },
+                {
+                    "name": "Aman Kot"
+                },
+                {
+                    "name": "Bakshi Pul"
+                },
+                {
+                    "name": "Bala Garhi"
+                },
+                {
+                    "name": "Balakot"
+                },
+                {
+                    "name": "Bannu"
+                },
+                {
+                    "name": "Bari Kot"
+                },
+                {
+                    "name": "Bashir Abad"
+                },
+                {
+                    "name": "Bat Khela"
+                },
+                {
+                    "name": "Batrasi"
+                },
+                {
+                    "name": "Battagram"
+                },
+                {
+                    "name": "Bunair"
+                },
+                {
+                    "name": "Buner"
+                },
+                {
+                    "name": "Chak Dara"
+                },
+                {
+                    "name": "Chamkani"
+                },
+                {
+                    "name": "Charbaagh"
+                },
+                {
+                    "name": "Char Bagh"
+                },
+                {
+                    "name": "Charsadda"
+                },
+                {
+                    "name": "Chitral"
+                },
+                {
+                    "name": "D I Khan"
+                },
+                {
+                    "name": "Dakota"
+                },
+                {
+                    "name": "Dargai"
+                },
+                {
+                    "name": "Dargai Malakand"
+                },
+                {
+                    "name": "Dingi"
+                },
+                {
+                    "name": "Dir"
+                },
+                {
+                    "name": "Gadoon"
+                },
+                {
+                    "name": "Gandaf"
+                },
+                {
+                    "name": "Garhi Habibullah"
+                },
+                {
+                    "name": "Garlat Balakot"
+                },
+                {
+                    "name": "Ghazi"
+                },
+                {
+                    "name": "Gujjar Garhi"
+                },
+                {
+                    "name": "Gumbad Maria"
+                },
+                {
+                    "name": "Gumbat"
+                },
+                {
+                    "name": "Gurmani"
+                },
+                {
+                    "name": "Hangu"
+                },
+                {
+                    "name": "Haripur"
+                },
+                {
+                    "name": "Hattar"
+                },
+                {
+                    "name": "Hayatabad"
+                },
+                {
+                    "name": "Islampur"
+                },
+                {
+                    "name": "Jalala"
+                },
+                {
+                    "name": "Jamal Garhi"
+                },
+                {
+                    "name": "Jehangira"
+                },
+                {
+                    "name": "Kabal"
+                },
+                {
+                    "name": "Kamalia Dassu"
+                },
+                {
+                    "name": "Kangra"
+                },
+                {
+                    "name": "Karak"
+                },
+                {
+                    "name": "Karnal Sher Killi"
+                },
+                {
+                    "name": "Katlang"
+                },
+                {
+                    "name": "Khairabad"
+                },
+                {
+                    "name": "Khushal Kot"
+                },
+                {
+                    "name": "Khwaza Khela"
+                },
+                {
+                    "name": "Kohat"
+                },
+                {
+                    "name": "Kotla Mohsin Khan"
+                },
+                {
+                    "name": "Kot Najeeb Ullah"
+                },
+                {
+                    "name": "Kund"
+                },
+                {
+                    "name": "Lachi"
+                },
+                {
+                    "name": "Lakki Marwat"
+                },
+                {
+                    "name": "Landikotal - Khyber Agency"
+                },
+                {
+                    "name": "Larama"
+                },
+                {
+                    "name": "Malakand"
+                },
+                {
+                    "name": "Malikabad"
+                },
+                {
+                    "name": "Malikpura"
+                },
+                {
+                    "name": "Mandian"
+                },
+                {
+                    "name": "Manglawar"
+                },
+                {
+                    "name": "Mangora"
+                },
+                {
+                    "name": "Mansehra"
+                },
+                {
+                    "name": "Manyar"
+                },
+                {
+                    "name": "Mardan"
+                },
+                {
+                    "name": "Marghuzar"
+                },
+                {
+                    "name": "Matta"
+                },
+                {
+                    "name": "Mayyar"
+                },
+                {
+                    "name": "Migora Swat"
+                },
+                {
+                    "name": "Mingora"
+                },
+                {
+                    "name": "Mouza Muhammad Khan"
+                },
+                {
+                    "name": "Nawanshehr"
+                },
+                {
+                    "name": "Nissata"
+                },
+                {
+                    "name": "Nizampur"
+                },
+                {
+                    "name": "Nowshera"
+                },
+                {
+                    "name": "Pabbi"
+                },
+                {
+                    "name": "Pakhwal"
+                },
+                {
+                    "name": "Panian"
+                },
+                {
+                    "name": "Panr"
+                },
+                {
+                    "name": "Para Chinar"
+                },
+                {
+                    "name": "Peshawar"
+                },
+                {
+                    "name": "Pir Bala"
+                },
+                {
+                    "name": "Pir Piay"
+                },
+                {
+                    "name": "Potha"
+                },
+                {
+                    "name": "Qabula Sharif"
+                },
+                {
+                    "name": "Qalander Abad"
+                },
+                {
+                    "name": "Qaldara"
+                },
+                {
+                    "name": "Rahat Abad"
+                },
+                {
+                    "name": "Ranjai"
+                },
+                {
+                    "name": "Rashakai"
+                },
+                {
+                    "name": "Rawlakot"
+                },
+                {
+                    "name": "Risalpur"
+                },
+                {
+                    "name": "Sangota"
+                },
+                {
+                    "name": "Sarae Norang"
+                },
+                {
+                    "name": "Sathi Town"
+                },
+                {
+                    "name": "Ser Dheri"
+                },
+                {
+                    "name": "Shabqadar"
+                },
+                {
+                    "name": "Shagai"
+                },
+                {
+                    "name": "Shangla Hill"
+                },
+                {
+                    "name": "Shinkayari"
+                },
+                {
+                    "name": "Shirin Kotay"
+                },
+                {
+                    "name": "Sikandarpur"
+                },
+                {
+                    "name": "Sobra City"
+                },
+                {
+                    "name": "Swabi"
+                },
+                {
+                    "name": "Swat"
+                },
+                {
+                    "name": "Tajori"
+                },
+                {
+                    "name": "Takht Bai"
+                },
+                {
+                    "name": "Talash"
+                },
+                {
+                    "name": "Tank"
+                },
+                {
+                    "name": "Tappi"
+                },
+                {
+                    "name": "Temar Garah"
+                },
+                {
+                    "name": "Terbela Ghazi"
+                },
+                {
+                    "name": "Timergera"
+                },
+                {
+                    "name": "Topi"
+                },
+                {
+                    "name": "Toru"
+                },
+                {
+                    "name": "Totakan"
+                },
+                {
+                    "name": "Umarzai"
+                },
+                {
+                    "name": "Upper Dir"
+                },
+                {
+                    "name": "Waligram"
+                },
+                {
+                    "name": "Warsak Garden"
+                },
+                {
+                    "name": "Warsak Garrison"
+                },
+                {
+                    "name": "Wazir Bagh"
+                }
+            ]
+        },
+        {
+            "province": "Punjab",
+            "cities": [
+                {
+                    "name": "Abdul Hakim"
+                },
+                {
+                    "name": "Adamke Cheema"
+                },
+                {
+                    "name": "Adam Wehain"
+                },
+                {
+                    "name": "Adda Pahrianwali"
+                },
+                {
+                    "name": "Ahmadpur East"
+                },
+                {
+                    "name": "Ahsan Pur"
+                },
+                {
+                    "name": "Ali Pur Chattha"
+                },
+                {
+                    "name": "Amara Kalan"
+                },
+                {
+                    "name": "Aminabad"
+                },
+                {
+                    "name": "Amin Garh"
+                },
+                {
+                    "name": "Arif Wala"
+                },
+                {
+                    "name": "Aroop Town"
+                },
+                {
+                    "name": "Attock"
+                },
+                {
+                    "name": "Attowala"
+                },
+                {
+                    "name": "Awagat"
+                },
+                {
+                    "name": "Badiana"
+                },
+                {
+                    "name": "Badomalhi"
+                },
+                {
+                    "name": "Bagha"
+                },
+                {
+                    "name": "Baglow Yatimwala"
+                },
+                {
+                    "name": "Bagwal Awan"
+                },
+                {
+                    "name": "Baha Wal Garh"
+                },
+                {
+                    "name": "Bahawalnagar"
+                },
+                {
+                    "name": "Bahawalpur"
+                },
+                {
+                    "name": "Bani Gala"
+                },
+                {
+                    "name": "Barakahu"
+                },
+                {
+                    "name": "Barian"
+                },
+                {
+                    "name": "Barjah"
+                },
+                {
+                    "name": "Baseerpur"
+                },
+                {
+                    "name": "Baseer Pur"
+                },
+                {
+                    "name": "Begowal"
+                },
+                {
+                    "name": "Behal"
+                },
+                {
+                    "name": "Bewal"
+                },
+                {
+                    "name": "Bhabra"
+                },
+                {
+                    "name": "Bhaddar"
+                },
+                {
+                    "name": "Bhagowal Kalan"
+                },
+                {
+                    "name": "Bhagtanwala"
+                },
+                {
+                    "name": "Bhai Pheru"
+                },
+                {
+                    "name": "Bhakkar"
+                },
+                {
+                    "name": "Bhalwal"
+                },
+                {
+                    "name": "Bhaun"
+                },
+                {
+                    "name": "Bhawana"
+                },
+                {
+                    "name": "Bhera"
+                },
+                {
+                    "name": "Bhong"
+                },
+                {
+                    "name": "Bhopalwala"
+                },
+                {
+                    "name": "Bhowanj"
+                },
+                {
+                    "name": "Bhung"
+                },
+                {
+                    "name": "Bhurban"
+                },
+                {
+                    "name": "Bidder Marjan"
+                },
+                {
+                    "name": "Bindi"
+                },
+                {
+                    "name": "Bunga Hayyat"
+                },
+                {
+                    "name": "Chachran Sharif"
+                },
+                {
+                    "name": "Chak"
+                },
+                {
+                    "name": "Chakwal"
+                },
+                {
+                    "name": "Changa Manga"
+                },
+                {
+                    "name": "Chashma"
+                },
+                {
+                    "name": "Chawinda"
+                },
+                {
+                    "name": "Chechian"
+                },
+                {
+                    "name": "Cheenab Nagar"
+                },
+                {
+                    "name": "Chela"
+                },
+                {
+                    "name": "Chichawatni"
+                },
+                {
+                    "name": "Chillianwala"
+                },
+                {
+                    "name": "Chishtian"
+                },
+                {
+                    "name": "Chitti Sheikhan"
+                },
+                {
+                    "name": "Choti"
+                },
+                {
+                    "name": "Chowk Munda"
+                },
+                {
+                    "name": "Chund Bharwana"
+                },
+                {
+                    "name": "Cod Kala"
+                },
+                {
+                    "name": "D G Khan"
+                },
+                {
+                    "name": "Dahranwala"
+                },
+                {
+                    "name": "Daira Din Panah"
+                },
+                {
+                    "name": "Daiwal"
+                },
+                {
+                    "name": "Dajal"
+                },
+                {
+                    "name": "Dalowali"
+                },
+                {
+                    "name": "Dandot"
+                },
+                {
+                    "name": "Daska"
+                },
+                {
+                    "name": "Daud Khel"
+                },
+                {
+                    "name": "Daultala"
+                },
+                {
+                    "name": "Depalpur"
+                },
+                {
+                    "name": "Dera Bakha"
+                },
+                {
+                    "name": "Dera Faridi"
+                },
+                {
+                    "name": "Dera Taj"
+                },
+                {
+                    "name": "Dhannot"
+                },
+                {
+                    "name": "Dharanwala"
+                },
+                {
+                    "name": "Dhodak"
+                },
+                {
+                    "name": "Dhoria"
+                },
+                {
+                    "name": "Dhudial"
+                },
+                {
+                    "name": "Dhunni"
+                },
+                {
+                    "name": "Dijkot"
+                },
+                {
+                    "name": "Dilawar Cheema"
+                },
+                {
+                    "name": "Dina"
+                },
+                {
+                    "name": "Dinga"
+                },
+                {
+                    "name": "Din Garh"
+                },
+                {
+                    "name": "Dodah"
+                },
+                {
+                    "name": "Domel"
+                },
+                {
+                    "name": "Dukki"
+                },
+                {
+                    "name": "Dullanwala"
+                },
+                {
+                    "name": "Duranpur"
+                },
+                {
+                    "name": "Ellah Abad"
+                },
+                {
+                    "name": "Faisalabad - Chak"
+                },
+                {
+                    "name": "Faisalabad - City"
+                },
+                {
+                    "name": "Faizabad"
+                },
+                {
+                    "name": "Farooqa"
+                },
+                {
+                    "name": "Farooqabad"
+                },
+                {
+                    "name": "Fateh Jang"
+                },
+                {
+                    "name": "Fazil Pur"
+                },
+                {
+                    "name": "Feroz Watan"
+                },
+                {
+                    "name": "Fortabbas"
+                },
+                {
+                    "name": "Gagoo Mandi"
+                },
+                {
+                    "name": "Gaily Wal"
+                },
+                {
+                    "name": "Gakhar Chanan"
+                },
+                {
+                    "name": "Garh Mahraj"
+                },
+                {
+                    "name": "Garh Mahraja"
+                },
+                {
+                    "name": "Garh More"
+                },
+                {
+                    "name": "Garjakh"
+                },
+                {
+                    "name": "Garmala"
+                },
+                {
+                    "name": "Ghakka Mitter"
+                },
+                {
+                    "name": "Ghakkar"
+                },
+                {
+                    "name": "Ghania"
+                },
+                {
+                    "name": "Gharial"
+                },
+                {
+                    "name": "Ghazipur"
+                },
+                {
+                    "name": "Ghunike"
+                },
+                {
+                    "name": "Gohad Pur"
+                },
+                {
+                    "name": "Gondal"
+                },
+                {
+                    "name": "Gopalpur"
+                },
+                {
+                    "name": "Gujar Khan"
+                },
+                {
+                    "name": "Gujranwala"
+                },
+                {
+                    "name": "Gujrat"
+                },
+                {
+                    "name": "Gullen Khel"
+                },
+                {
+                    "name": "Gunna"
+                },
+                {
+                    "name": "Hafizabad"
+                },
+                {
+                    "name": "Hariawala"
+                },
+                {
+                    "name": "Haroonabad"
+                },
+                {
+                    "name": "Hasilpur"
+                },
+                {
+                    "name": "Hasnainabad"
+                },
+                {
+                    "name": "Hassan Abdal"
+                },
+                {
+                    "name": "Hazro"
+                },
+                {
+                    "name": "Hidayatabad"
+                },
+                {
+                    "name": "Hujra Shah Muqeem"
+                },
+                {
+                    "name": "Iskandarabad"
+                },
+                {
+                    "name": "Jalal Pur Bhattian"
+                },
+                {
+                    "name": "Jamal Din Wali"
+                },
+                {
+                    "name": "Jamalpur"
+                },
+                {
+                    "name": "Jampur"
+                },
+                {
+                    "name": "Jand"
+                },
+                {
+                    "name": "Jaranwala"
+                },
+                {
+                    "name": "Jassar"
+                },
+                {
+                    "name": "Jassarwala"
+                },
+                {
+                    "name": "Jhairanwala"
+                },
+                {
+                    "name": "Jhal Chakian"
+                },
+                {
+                    "name": "Jhang"
+                },
+                {
+                    "name": "Jhanian"
+                },
+                {
+                    "name": "Jhawrian"
+                },
+                {
+                    "name": "Jhelum"
+                },
+                {
+                    "name": "Joharabad"
+                },
+                {
+                    "name": "Kahuta"
+                },
+                {
+                    "name": "Kalabagh"
+                },
+                {
+                    "name": "Kallar Sayedan"
+                },
+                {
+                    "name": "Kaloor Kot"
+                },
+                {
+                    "name": "Kamar Mushani"
+                },
+                {
+                    "name": "Kamoke"
+                },
+                {
+                    "name": "Kamra"
+                },
+                {
+                    "name": "Karianwala"
+                },
+                {
+                    "name": "Karimpura"
+                },
+                {
+                    "name": "Karmabad"
+                },
+                {
+                    "name": "Kasur"
+                },
+                {
+                    "name": "Khairpur Tamewali"
+                },
+                {
+                    "name": "Khambi"
+                },
+                {
+                    "name": "Khan Bella"
+                },
+                {
+                    "name": "Khanewal"
+                },
+                {
+                    "name": "Khan Garh"
+                },
+                {
+                    "name": "Khanpur"
+                },
+                {
+                    "name": "Khanqah Dogran"
+                },
+                {
+                    "name": "Kharian"
+                },
+                {
+                    "name": "Khaur"
+                },
+                {
+                    "name": "Khawaja Gunj"
+                },
+                {
+                    "name": "Khewra"
+                },
+                {
+                    "name": "Khiali Shah Pur Town"
+                },
+                {
+                    "name": "Khurianwala"
+                },
+                {
+                    "name": "Khushab"
+                },
+                {
+                    "name": "Kot Chandna"
+                },
+                {
+                    "name": "Kot Fateh Din"
+                },
+                {
+                    "name": "Kotha"
+                },
+                {
+                    "name": "Kot Haleem Khan"
+                },
+                {
+                    "name": "Kot Khizri"
+                },
+                {
+                    "name": "Kotla Arab Ali Khan"
+                },
+                {
+                    "name": "Kotli Loharan"
+                },
+                {
+                    "name": "Kot Mithan"
+                },
+                {
+                    "name": "Kot Momen"
+                },
+                {
+                    "name": "Kotmomin"
+                },
+                {
+                    "name": "Kot Murad Khan"
+                },
+                {
+                    "name": "Kot Nakaa"
+                },
+                {
+                    "name": "Kot Qutab"
+                },
+                {
+                    "name": "Kot Rada Kishan"
+                },
+                {
+                    "name": "Kot Samabha"
+                },
+                {
+                    "name": "Kundian"
+                },
+                {
+                    "name": "Lahore - Abbot Road"
+                },
+                {
+                    "name": "Lahore - Agrics"
+                },
+                {
+                    "name": "Lahore - Askari"
+                },
+                {
+                    "name": "Lahore - Badami Bagh"
+                },
+                {
+                    "name": "Lahore - Baghbanpura"
+                },
+                {
+                    "name": "Lahore - Bahria Town"
+                },
+                {
+                    "name": "Lahore - Barki Road"
+                },
+                {
+                    "name": "Lahore - Bata Pur"
+                },
+                {
+                    "name": "Lahore - BOR Society"
+                },
+                {
+                    "name": "Lahore - Canal City"
+                },
+                {
+                    "name": "Lahore - Canal Garden"
+                },
+                {
+                    "name": "Lahore - Cantt"
+                },
+                {
+                    "name": "Lahore - Center"
+                },
+                {
+                    "name": "Lahore - Chaburji"
+                },
+                {
+                    "name": "Lahore - Chung"
+                },
+                {
+                    "name": "Lahore - Collage Road"
+                },
+                {
+                    "name": "Lahore - Daroghawala"
+                },
+                {
+                    "name": "Lahore - Davis Road"
+                },
+                {
+                    "name": "Lahore - Defence"
+                },
+                {
+                    "name": "Lahore - Defence Road Raiwind"
+                },
+                {
+                    "name": "Lahore - DHA"
+                },
+                {
+                    "name": "Lahore - Dharampura"
+                },
+                {
+                    "name": "Lahore - Eden"
+                },
+                {
+                    "name": "Lahore - Eden Value Home"
+                },
+                {
+                    "name": "Lahore - Egerton Road"
+                },
+                {
+                    "name": "Lahore - EME"
+                },
+                {
+                    "name": "Lahore - Empress Road"
+                },
+                {
+                    "name": "Lahore - Engineers Town"
+                },
+                {
+                    "name": "Lahore - Faisal Town"
+                },
+                {
+                    "name": "Lahore - Ferozpur Road"
+                },
+                {
+                    "name": "Lahore - Garden Town"
+                },
+                {
+                    "name": "Lahore - Garhi Shahu"
+                },
+                {
+                    "name": "Lahore - Green Town"
+                },
+                {
+                    "name": "Lahore - Gulberg"
+                },
+                {
+                    "name": "Lahore - Gul-e-Daman"
+                },
+                {
+                    "name": "Lahore - Gulshan-e-Ravi"
+                },
+                {
+                    "name": "Lahore - Harbanspura"
+                },
+                {
+                    "name": "Lahore - Iqbal Avenue"
+                },
+                {
+                    "name": "Lahore - Iqbal Town"
+                },
+                {
+                    "name": "Lahore - Izmir Town"
+                },
+                {
+                    "name": "Lahore - Jail Road"
+                },
+                {
+                    "name": "Lahore - Jallo"
+                },
+                {
+                    "name": "Lahore - Johar Town"
+                },
+                {
+                    "name": "Lahore - Judicial Colony"
+                },
+                {
+                    "name": "Lahore - Kasoor Road"
+                },
+                {
+                    "name": "Lahore - Khayaban-e-Jinnah Road"
+                },
+                {
+                    "name": "Lahore - Kot Lakh Pat"
+                },
+                {
+                    "name": "Lahore - Lawrence Road"
+                },
+                {
+                    "name": "Lahore - Mall Road"
+                },
+                {
+                    "name": "Lahore - Manawan"
+                },
+                {
+                    "name": "Lahore - Mansoorah"
+                },
+                {
+                    "name": "Lahore - Mcleod Road"
+                },
+                {
+                    "name": "Lahore - Military Accounts"
+                },
+                {
+                    "name": "Lahore - Model Town"
+                },
+                {
+                    "name": "Lahore - Mozang"
+                },
+                {
+                    "name": "Lahore - Mughulpura"
+                },
+                {
+                    "name": "Lahore - Muhafiz Town"
+                },
+                {
+                    "name": "Lahore - Nespak"
+                },
+                {
+                    "name": "Lahore - Other"
+                },
+                {
+                    "name": "Lahore - P\u0026D Colony"
+                },
+                {
+                    "name": "Lahore - Pak Arab Society"
+                },
+                {
+                    "name": "Lahore - PCSIR Staff Colony"
+                },
+                {
+                    "name": "Lahore - PIA Road PGECHS"
+                },
+                {
+                    "name": "Lahore - PIA Society"
+                },
+                {
+                    "name": "Lahore - Punjab Society"
+                },
+                {
+                    "name": "Lahore - Railway Station"
+                },
+                {
+                    "name": "Lahore - Raiwind Road"
+                },
+                {
+                    "name": "Lahore - Rajpoot Town"
+                },
+                {
+                    "name": "Lahore - Ravi Road"
+                },
+                {
+                    "name": "Lahore - River View Society"
+                },
+                {
+                    "name": "Lahore - Sabzazar"
+                },
+                {
+                    "name": "Lahore - Salamat Pura"
+                },
+                {
+                    "name": "Lahore - Samnabad"
+                },
+                {
+                    "name": "Lahore - Sanda Islampura"
+                },
+                {
+                    "name": "Lahore - Shad Bagh"
+                },
+                {
+                    "name": "Lahore - Shadman"
+                },
+                {
+                    "name": "Lahore - Shahbagh China Scheme"
+                },
+                {
+                    "name": "Lahore - Shahdra"
+                },
+                {
+                    "name": "Lahore - Shalimar Town"
+                },
+                {
+                    "name": "Lahore - Sher Ali Road"
+                },
+                {
+                    "name": "Lahore - Singh Pura"
+                },
+                {
+                    "name": "Lahore - Sitara Colony"
+                },
+                {
+                    "name": "Lahore - Sukh Chain Garden"
+                },
+                {
+                    "name": "Lahore - Thokar Canal Road"
+                },
+                {
+                    "name": "Lahore - Thokar Multan Road"
+                },
+                {
+                    "name": "Lahore - Town Ship"
+                },
+                {
+                    "name": "Lahore - Triocon Village"
+                },
+                {
+                    "name": "Lahore - Upper Mall"
+                },
+                {
+                    "name": "Lahore - Valencia"
+                },
+                {
+                    "name": "Lahore - Wahdat Road"
+                },
+                {
+                    "name": "Lahore - Walled City"
+                },
+                {
+                    "name": "Lahore - Walton"
+                },
+                {
+                    "name": "Lahore - Wapda Town"
+                },
+                {
+                    "name": "Lahore - Yateem Khana"
+                },
+                {
+                    "name": "Lahore - Zarar Shaheed Road"
+                },
+                {
+                    "name": "Lak Mor"
+                },
+                {
+                    "name": "Lalian"
+                },
+                {
+                    "name": "Laliyan"
+                },
+                {
+                    "name": "Layyah"
+                },
+                {
+                    "name": "Liaquatpur"
+                },
+                {
+                    "name": "Lodhran"
+                },
+                {
+                    "name": "Lower Barian"
+                },
+                {
+                    "name": "Lower Topa"
+                },
+                {
+                    "name": "Luddhan"
+                },
+                {
+                    "name": "Machiwala"
+                },
+                {
+                    "name": "Makhdoompur"
+                },
+                {
+                    "name": "Malakwal"
+                },
+                {
+                    "name": "Mamun Kunjan"
+                },
+                {
+                    "name": "Manawala"
+                },
+                {
+                    "name": "Mandi Bhauddin"
+                },
+                {
+                    "name": "Mandi Faiz Abad"
+                },
+                {
+                    "name": "Mandra"
+                },
+                {
+                    "name": "Mari Lak"
+                },
+                {
+                    "name": "Meharabad"
+                },
+                {
+                    "name": "Mehmood Kot"
+                },
+                {
+                    "name": "Mehray Wala"
+                },
+                {
+                    "name": "Miani"
+                },
+                {
+                    "name": "Mianwali"
+                },
+                {
+                    "name": "Minchinabad"
+                },
+                {
+                    "name": "Mirpur Bhagal"
+                },
+                {
+                    "name": "Mithalak"
+                },
+                {
+                    "name": "Mithan Kot"
+                },
+                {
+                    "name": "Mithankot Chahcran Sharif"
+                },
+                {
+                    "name": "Mitha Tiwana"
+                },
+                {
+                    "name": "Mitran Wala"
+                },
+                {
+                    "name": "Mitro"
+                },
+                {
+                    "name": "Moazamabad"
+                },
+                {
+                    "name": "Moch"
+                },
+                {
+                    "name": "Mona"
+                },
+                {
+                    "name": "Mona Depot"
+                },
+                {
+                    "name": "Moradabad"
+                },
+                {
+                    "name": "More Emin Abad"
+                },
+                {
+                    "name": "Mozam Abad"
+                },
+                {
+                    "name": "Mubarakpur"
+                },
+                {
+                    "name": "Muhammadpur"
+                },
+                {
+                    "name": "Mulhal Mughlan"
+                },
+                {
+                    "name": "Multan"
+                },
+                {
+                    "name": "Murad Wala"
+                },
+                {
+                    "name": "Mureed"
+                },
+                {
+                    "name": "Muridke"
+                },
+                {
+                    "name": "Murree"
+                },
+                {
+                    "name": "Muslimabad"
+                },
+                {
+                    "name": "Mustafa Abad"
+                },
+                {
+                    "name": "Muzaffargarh"
+                },
+                {
+                    "name": "Nandipur"
+                },
+                {
+                    "name": "Nandi Pur Town"
+                },
+                {
+                    "name": "Nangal"
+                },
+                {
+                    "name": "Nankana Sahib"
+                },
+                {
+                    "name": "Narang Mandi"
+                },
+                {
+                    "name": "Narowal"
+                },
+                {
+                    "name": "Naseera"
+                },
+                {
+                    "name": "Naudero"
+                },
+                {
+                    "name": "Nawab Pur"
+                },
+                {
+                    "name": "Nawan Jandanwala"
+                },
+                {
+                    "name": "Nawan Kot"
+                },
+                {
+                    "name": "Nawan Pind"
+                },
+                {
+                    "name": "Niaz Nagar"
+                },
+                {
+                    "name": "Nizamabad"
+                },
+                {
+                    "name": "Noonan Wali"
+                },
+                {
+                    "name": "Noor Jamal"
+                },
+                {
+                    "name": "Noor Kot"
+                },
+                {
+                    "name": "Nowshera Virkan"
+                },
+                {
+                    "name": "Okara"
+                },
+                {
+                    "name": "Padhrar"
+                },
+                {
+                    "name": "Pak Pattan"
+                },
+                {
+                    "name": "Pasroor"
+                },
+                {
+                    "name": "Pero Shah"
+                },
+                {
+                    "name": "Phalia"
+                },
+                {
+                    "name": "Phularwan"
+                },
+                {
+                    "name": "Pind Dadan Khan"
+                },
+                {
+                    "name": "Pind Gheb"
+                },
+                {
+                    "name": "Pindi Gheb"
+                },
+                {
+                    "name": "Pindi Gujran"
+                },
+                {
+                    "name": "Pir Ghani"
+                },
+                {
+                    "name": "Pirmahal"
+                },
+                {
+                    "name": "Pir Mahal"
+                },
+                {
+                    "name": "Puran"
+                },
+                {
+                    "name": "Qadir Abad"
+                },
+                {
+                    "name": "Qadir Pur"
+                },
+                {
+                    "name": "Qadir Pur Rawan"
+                },
+                {
+                    "name": "Qaidabad"
+                },
+                {
+                    "name": "Qasba Gujrat"
+                },
+                {
+                    "name": "Qasim Bela"
+                },
+                {
+                    "name": "Qasim Pur"
+                },
+                {
+                    "name": "Qila Daidar Singh Town"
+                },
+                {
+                    "name": "Qila Didar Singh"
+                },
+                {
+                    "name": "Qila Kalar Wala"
+                },
+                {
+                    "name": "Qila Ram Rang"
+                },
+                {
+                    "name": "Qila Sahib Singh"
+                },
+                {
+                    "name": "Qudratabad"
+                },
+                {
+                    "name": "Rabwah"
+                },
+                {
+                    "name": "Rahimabad"
+                },
+                {
+                    "name": "Rahim Yar Khan"
+                },
+                {
+                    "name": "Rahwali"
+                },
+                {
+                    "name": "Raiwind"
+                },
+                {
+                    "name": "Rajana"
+                },
+                {
+                    "name": "Rajanpur"
+                },
+                {
+                    "name": "Rajar"
+                },
+                {
+                    "name": "Raj Kot"
+                },
+                {
+                    "name": "Rana Wahan"
+                },
+                {
+                    "name": "Rangoo"
+                },
+                {
+                    "name": "Rang Shah"
+                },
+                {
+                    "name": "Rani Pur"
+                },
+                {
+                    "name": "Ratta Bajwa"
+                },
+                {
+                    "name": "Rawalpindi - Adiyala Road"
+                },
+                {
+                    "name": "Rawalpindi - Afshan Colony"
+                },
+                {
+                    "name": "Rawalpindi - Asghar Mall"
+                },
+                {
+                    "name": "Rawalpindi - Askari"
+                },
+                {
+                    "name": "Rawalpindi - Bahria Town"
+                },
+                {
+                    "name": "Rawalpindi - Chaklala"
+                },
+                {
+                    "name": "Rawalpindi - DHA"
+                },
+                {
+                    "name": "Rawalpindi - Dhoke Ratta"
+                },
+                {
+                    "name": "Rawalpindi - Ghauri Town"
+                },
+                {
+                    "name": "Rawalpindi - Gulraiz"
+                },
+                {
+                    "name": "Rawalpindi - Highway"
+                },
+                {
+                    "name": "Rawalpindi - Lalazar"
+                },
+                {
+                    "name": "Rawalpindi - Misriyal"
+                },
+                {
+                    "name": "Rawalpindi - Morgah"
+                },
+                {
+                    "name": "Rawalpindi - Other"
+                },
+                {
+                    "name": "Rawalpindi - Rawal Road"
+                },
+                {
+                    "name": "Rawalpindi - Sadiqabad"
+                },
+                {
+                    "name": "Rawalpindi - Satellite Town"
+                },
+                {
+                    "name": "Rawalpindi - Westridge"
+                },
+                {
+                    "name": "Rawat"
+                },
+                {
+                    "name": "Rehmat Abad"
+                },
+                {
+                    "name": "Sadiqabad"
+                },
+                {
+                    "name": "Sagri"
+                },
+                {
+                    "name": "Sahiwal"
+                },
+                {
+                    "name": "Sambrial"
+                },
+                {
+                    "name": "Samundari"
+                },
+                {
+                    "name": "Sanawan"
+                },
+                {
+                    "name": "Sarai Alamgir"
+                },
+                {
+                    "name": "Sargodha"
+                },
+                {
+                    "name": "Shadan Lund"
+                },
+                {
+                    "name": "Shahdara"
+                },
+                {
+                    "name": "Shaheeenabad"
+                },
+                {
+                    "name": "Shah Nal"
+                },
+                {
+                    "name": "Shahpur"
+                },
+                {
+                    "name": "Shahpur City"
+                },
+                {
+                    "name": "Shahpur Jahania"
+                },
+                {
+                    "name": "Shahpur Sadar"
+                },
+                {
+                    "name": "Shamaspur"
+                },
+                {
+                    "name": "Sheikhupura"
+                },
+                {
+                    "name": "Sherpur"
+                },
+                {
+                    "name": "Shinka"
+                },
+                {
+                    "name": "Shujaabad"
+                },
+                {
+                    "name": "Sialkot"
+                },
+                {
+                    "name": "Silanwali"
+                },
+                {
+                    "name": "Sillanwali"
+                },
+                {
+                    "name": "Sohawa"
+                },
+                {
+                    "name": "Talwandi"
+                },
+                {
+                    "name": "Tanda"
+                },
+                {
+                    "name": "Tarbela Dam"
+                },
+                {
+                    "name": "Tarnol"
+                },
+                {
+                    "name": "Taxila"
+                },
+                {
+                    "name": "Thanil Fatoohi"
+                },
+                {
+                    "name": "Toba Tek Singh"
+                },
+                {
+                    "name": "Tulamba"
+                },
+                {
+                    "name": "Uch Sharif"
+                },
+                {
+                    "name": "Ugoki"
+                },
+                {
+                    "name": "Upper Topa"
+                },
+                {
+                    "name": "Vanjari"
+                },
+                {
+                    "name": "Vehari"
+                },
+                {
+                    "name": "Wagowal"
+                },
+                {
+                    "name": "Wah"
+                },
+                {
+                    "name": "Wah Cantt"
+                },
+                {
+                    "name": "Waisa"
+                },
+                {
+                    "name": "Wasu"
+                },
+                {
+                    "name": "Yazman"
+                },
+                {
+                    "name": "Yousaf Wala"
+                },
+                {
+                    "name": "Zafar Wal"
+                },
+                {
+                    "name": "Zahir Pir"
+                }
+            ]
+        },
+        {
+            "province": "Sindh",
+            "cities": [
+                {
+                    "name": "Bandhi"
+                },
+                {
+                    "name": "Bangul Dero"
+                },
+                {
+                    "name": "Bhanbore"
+                },
+                {
+                    "name": "Bhan Saeead Abad"
+                },
+                {
+                    "name": "Bhit Shah"
+                },
+                {
+                    "name": "Chohar Jamali"
+                },
+                {
+                    "name": "Dadu"
+                },
+                {
+                    "name": "Daharki"
+                },
+                {
+                    "name": "Daro"
+                },
+                {
+                    "name": "Darya Khan Mari"
+                },
+                {
+                    "name": "Daulatpur"
+                },
+                {
+                    "name": "Daur"
+                },
+                {
+                    "name": "Dhabeji"
+                },
+                {
+                    "name": "Digri"
+                },
+                {
+                    "name": "Diplo"
+                },
+                {
+                    "name": "Dokri"
+                },
+                {
+                    "name": "Garhi Khairo"
+                },
+                {
+                    "name": "Gharo"
+                },
+                {
+                    "name": "Ghaus Pur"
+                },
+                {
+                    "name": "Golarchi"
+                },
+                {
+                    "name": "Goth Machhi"
+                },
+                {
+                    "name": "Guddu"
+                },
+                {
+                    "name": "Hala"
+                },
+                {
+                    "name": "Halani"
+                },
+                {
+                    "name": "Hyderabad"
+                },
+                {
+                    "name": "Islamkot"
+                },
+                {
+                    "name": "Jacobabad"
+                },
+                {
+                    "name": "Jam"
+                },
+                {
+                    "name": "Jamshoro"
+                },
+                {
+                    "name": "Jhimpir"
+                },
+                {
+                    "name": "Jhuddo"
+                },
+                {
+                    "name": "Johi"
+                },
+                {
+                    "name": "Kahirpur Mir's"
+                },
+                {
+                    "name": "Kamber"
+                },
+                {
+                    "name": "Kamber Ali Khan"
+                },
+                {
+                    "name": "Kandhkot"
+                },
+                {
+                    "name": "Kandiaro"
+                },
+                {
+                    "name": "Karachi - AB Sinia Colony"
+                },
+                {
+                    "name": "Karachi - Askari"
+                },
+                {
+                    "name": "Karachi - Bahria Town"
+                },
+                {
+                    "name": "Karachi - Baldia Town"
+                },
+                {
+                    "name": "Karachi - Baloch Colony"
+                },
+                {
+                    "name": "Karachi - Bhimpora"
+                },
+                {
+                    "name": "Karachi - Bohra Pir"
+                },
+                {
+                    "name": "Karachi - Bombay Bazar"
+                },
+                {
+                    "name": "Karachi - BufferZone"
+                },
+                {
+                    "name": "Karachi - Cantonment C.O.D"
+                },
+                {
+                    "name": "Karachi - Cantonment Daud Pota Road"
+                },
+                {
+                    "name": "Karachi - Cantonment FTC"
+                },
+                {
+                    "name": "Karachi - Cantonment NHS"
+                },
+                {
+                    "name": "Karachi - Cantonment PAF Base"
+                },
+                {
+                    "name": "Karachi - Cantonment Railway Station"
+                },
+                {
+                    "name": "Karachi - Cantonment Regent Plaza"
+                },
+                {
+                    "name": "Karachi - Cantonment Shahra-e-Faisal"
+                },
+                {
+                    "name": "Karachi - Civil Lines"
+                },
+                {
+                    "name": "Karachi - Clifton"
+                },
+                {
+                    "name": "Karachi - DHA"
+                },
+                {
+                    "name": "Karachi - F.B Area"
+                },
+                {
+                    "name": "Karachi - F.C Area"
+                },
+                {
+                    "name": "Karachi - Firdous Colony"
+                },
+                {
+                    "name": "Karachi - Garden"
+                },
+                {
+                    "name": "Karachi - Gulistan-e-Johar"
+                },
+                {
+                    "name": "Karachi - Gulshan-e-Hadeed"
+                },
+                {
+                    "name": "Karachi - Gulshan-e-Iqbal"
+                },
+                {
+                    "name": "Karachi - Gulshan-e-Maymar"
+                },
+                {
+                    "name": "Karachi - Hawksbay"
+                },
+                {
+                    "name": "Karachi - I.I Chundrigarh"
+                },
+                {
+                    "name": "Karachi - Jamshed Road"
+                },
+                {
+                    "name": "Karachi - Jodia Bazar"
+                },
+                {
+                    "name": "Karachi - K.D.A Officers"
+                },
+                {
+                    "name": "Karachi - Kagzi Bazar"
+                },
+                {
+                    "name": "Karachi - Kakri Ground"
+                },
+                {
+                    "name": "Karachi - Kamil Gali"
+                },
+                {
+                    "name": "Karachi - Kemari"
+                },
+                {
+                    "name": "Karachi - Khada Market"
+                },
+                {
+                    "name": "Karachi - Kharadar"
+                },
+                {
+                    "name": "Karachi - Khudadad Colony"
+                },
+                {
+                    "name": "Karachi - Korangi"
+                },
+                {
+                    "name": "Karachi - Landhi"
+                },
+                {
+                    "name": "Karachi - Lee Market"
+                },
+                {
+                    "name": "Karachi - Liaquatabad"
+                },
+                {
+                    "name": "Karachi - Liyari"
+                },
+                {
+                    "name": "Karachi - M.A Jinnah Road"
+                },
+                {
+                    "name": "Karachi - Malir"
+                },
+                {
+                    "name": "Karachi - Manora"
+                },
+                {
+                    "name": "Karachi - Mithadar"
+                },
+                {
+                    "name": "Karachi - Muhammad Ali Society"
+                },
+                {
+                    "name": "Karachi - Muslimabad Society"
+                },
+                {
+                    "name": "Karachi - Nanwara"
+                },
+                {
+                    "name": "Karachi - Nazimabad"
+                },
+                {
+                    "name": "Karachi - New Karachi"
+                },
+                {
+                    "name": "Karachi - New Surjani"
+                },
+                {
+                    "name": "Karachi - Nishter Road"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 10"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 11"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 2"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 3"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 4"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 5"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 6"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 7"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 8"
+                },
+                {
+                    "name": "Karachi - North Karachi Sector 9"
+                },
+                {
+                    "name": "Karachi - North Nazimabad"
+                },
+                {
+                    "name": "Karachi - Old Town"
+                },
+                {
+                    "name": "Karachi - Orangi Town"
+                },
+                {
+                    "name": "Karachi - P.E.C.H.S"
+                },
+                {
+                    "name": "Karachi - Pan Mandi"
+                },
+                {
+                    "name": "Karachi - PIB Colony"
+                },
+                {
+                    "name": "Karachi - Pipri Goth"
+                },
+                {
+                    "name": "Karachi - Ramswami"
+                },
+                {
+                    "name": "Karachi - Ranchorline"
+                },
+                {
+                    "name": "Karachi - Rizvia Society"
+                },
+                {
+                    "name": "Karachi - S.I.T.E"
+                },
+                {
+                    "name": "Karachi - Saddar"
+                },
+                {
+                    "name": "Karachi - Scheme 33"
+                },
+                {
+                    "name": "Karachi - Shabbirabad"
+                },
+                {
+                    "name": "Karachi - Shadman Town"
+                },
+                {
+                    "name": "Karachi - Shah Faisal Colony"
+                },
+                {
+                    "name": "Karachi - Sher Shah"
+                },
+                {
+                    "name": "Karachi - Sultanabad"
+                },
+                {
+                    "name": "Karachi - Surjani"
+                },
+                {
+                    "name": "Karampur"
+                },
+                {
+                    "name": "Kashmore"
+                },
+                {
+                    "name": "Khairpur Nathan Shah"
+                },
+                {
+                    "name": "Khipro"
+                },
+                {
+                    "name": "Khoski"
+                },
+                {
+                    "name": "Kot Ghulam Mohammad"
+                },
+                {
+                    "name": "Kotri"
+                },
+                {
+                    "name": "Kunri"
+                },
+                {
+                    "name": "Larkana"
+                },
+                {
+                    "name": "Machi Goth"
+                },
+                {
+                    "name": "Matiari"
+                },
+                {
+                    "name": "Matli"
+                },
+                {
+                    "name": "Mehar"
+                },
+                {
+                    "name": "Mehrabpur"
+                },
+                {
+                    "name": "Mirokhan"
+                },
+                {
+                    "name": "Mirpur Bathoro"
+                },
+                {
+                    "name": "Mirpur Khas"
+                },
+                {
+                    "name": "Mirpur Sakro"
+                },
+                {
+                    "name": "Mithi"
+                },
+                {
+                    "name": "Mohenjo Daro"
+                },
+                {
+                    "name": "Moro"
+                },
+                {
+                    "name": "Nasarpur"
+                },
+                {
+                    "name": "Naudero Larkhana"
+                },
+                {
+                    "name": "Naukot"
+                },
+                {
+                    "name": "Naushero Feroze"
+                },
+                {
+                    "name": "Nawabshah"
+                },
+                {
+                    "name": "New Saeedabad"
+                },
+                {
+                    "name": "Ninda"
+                },
+                {
+                    "name": "Nooriabad"
+                },
+                {
+                    "name": "Pacca Chang"
+                },
+                {
+                    "name": "Pangrio"
+                },
+                {
+                    "name": "Panno Aqil"
+                },
+                {
+                    "name": "Petaro"
+                },
+                {
+                    "name": "Phulji Station"
+                },
+                {
+                    "name": "Pir Jo Goth"
+                },
+                {
+                    "name": "Qambar Shahdadkot"
+                },
+                {
+                    "name": "Qazi Ahmad"
+                },
+                {
+                    "name": "Radhan"
+                },
+                {
+                    "name": "Ranipur"
+                },
+                {
+                    "name": "Ratodero"
+                },
+                {
+                    "name": "Rohri"
+                },
+                {
+                    "name": "Sajawal"
+                },
+                {
+                    "name": "Sakrand"
+                },
+                {
+                    "name": "Samaro"
+                },
+                {
+                    "name": "Sanjar Chang"
+                },
+                {
+                    "name": "Sarhari"
+                },
+                {
+                    "name": "Sehwan Sharif"
+                },
+                {
+                    "name": "Shahdad Kot"
+                },
+                {
+                    "name": "Shaheed Benazirabad"
+                },
+                {
+                    "name": "Shahpur Chakar"
+                },
+                {
+                    "name": "Shehdadpur"
+                },
+                {
+                    "name": "Shikarpur"
+                },
+                {
+                    "name": "Singhoro"
+                },
+                {
+                    "name": "Sobho Dero"
+                },
+                {
+                    "name": "Sukkur"
+                },
+                {
+                    "name": "Sultan Kot"
+                },
+                {
+                    "name": "Talhar"
+                },
+                {
+                    "name": "Tando Adam"
+                },
+                {
+                    "name": "Tando Allahyar"
+                },
+                {
+                    "name": "Tando Bagho"
+                },
+                {
+                    "name": "Tando Gulam Ali"
+                },
+                {
+                    "name": "Tando Jam"
+                },
+                {
+                    "name": "Tando Muhammad Khan"
+                },
+                {
+                    "name": "Tando Soomro"
+                },
+                {
+                    "name": "Thana Bola Khan"
+                },
+                {
+                    "name": "Thari Mirwah"
+                },
+                {
+                    "name": "Tharo Shah"
+                },
+                {
+                    "name": "Thul"
+                },
+                {
+                    "name": "Ubaouro"
+                },
+                {
+                    "name": "Umarkot"
+                },
+                {
+                    "name": "Waggan"
+                },
+                {
+                    "name": "Warah"
+                }
+            ]
+        }
+    ]
+}

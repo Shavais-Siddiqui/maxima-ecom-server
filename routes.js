@@ -1,19 +1,43 @@
 const express = require('express');
 const router = express.Router();
-const UserController = require('./controllers/userController');
 const jwt = require('./utils/jwt');
+const UserController = require('./controllers/userController');
+const CateogryController = require('./controllers/categoryController');
+const ProductController = require('./controllers/productController');
+const ReviewController = require('./controllers/reviewController');
+const SeedController = require('./controllers/seedController');
 
-router.get('/test', jwt.verifyJwt, (req, res) => {
+router.get('/test', (req, res) => {
     res.send('Server Is Running!');
 });
 
-router.post('/check-social-login', UserController.verify);
 router.post('/add-user', UserController.register);
 router.post('/login', UserController.login);
 router.post('/verify-email/:id', UserController.emailVerification);
-// router.post('/testMail', UserController.testMail);
 router.get('/get-data', jwt.verifyJwt, UserController.getData);
+router.patch('/update/:id', jwt.verifyJwt, UserController.update);
 
+// Cateogries
 
+router.get('/all-categories', CateogryController.getAll);
+router.post('/add-category', CateogryController.addNew); // Admin Specific
+router.patch('/update-category/:id', CateogryController.update); // Admin Specific
+
+// Products
+
+router.get('/all-products', ProductController.getAll);
+router.get('/specific-products/:id', ProductController.getSpecific);
+router.get('/detail-product/:id', ProductController.detailProduct);
+router.post('/add-product', ProductController.addNew); // Admin Specific
+router.patch('/update-product/:id', ProductController.update); // Admin Specific
+
+// Reviews
+
+router.post('/add-review', ReviewController.add);
+
+// Seed
+
+router.get('/all-province', SeedController.allProvinces);
+router.get('/specific-cities/:id', SeedController.cities);
 
 module.exports = router;
