@@ -1,8 +1,18 @@
 {
     "development": {
-        "db": "mongodb+srv://shavais:maximaecomm@cluster0-zdaom.mongodb.net/test?retryWrites=true&w=majority"
+        "db": "mongodb+srv://shavais:maximaecomm@cluster0-zdaom.mongodb.net/test?retryWrites=true&w=majority",
+        "cloudinary": {
+            "cloud_name": "dwum3bngw",
+            "api_key": "535717853846563",
+            "api_secret": "IV0XneeS9xAJJJGoF4hX3BbdabY"
+        }
     },
     "production": {
-        "db": "mongodb+srv://shavais:maximaecomm@cluster0-zdaom.mongodb.net/test?retryWrites=true&w=majority"
+        "db": "mongodb+srv://shavais:maximaecomm@cluster0-zdaom.mongodb.net/test?retryWrites=true&w=majority",
+        "cloudinary": {
+            "cloud_name": "dwum3bngw",
+            "api_key": "535717853846563",
+            "api_secret": "IV0XneeS9xAJJJGoF4hX3BbdabY"
+        }
     }
 }

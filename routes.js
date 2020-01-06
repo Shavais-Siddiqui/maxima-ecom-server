@@ -7,6 +7,14 @@ const ProductController = require('./controllers/productController');
 const ReviewController = require('./controllers/reviewController');
 const SeedController = require('./controllers/seedController');
 
+const multer = require('multer');
+
+
+const storage = multer.memoryStorage();
+const multerUploads = multer({ storage }).array('images', 4);
+
+
+
 router.get('/test', (req, res) => {
     res.send('Server Is Running!');
 });
@@ -28,7 +36,7 @@ router.patch('/update-category/:id', CateogryController.update); // Admin Specif
 router.get('/all-products', ProductController.getAll);
 router.get('/specific-products/:id', ProductController.getSpecific);
 router.get('/detail-product/:id', ProductController.detailProduct);
-router.post('/add-product', ProductController.addNew); // Admin Specific
+router.post('/add-product', multerUploads, ProductController.addNew); // Admin Specific
 router.patch('/update-product/:id', ProductController.update); // Admin Specific
 
 // Reviews
@@ -39,5 +47,7 @@ router.post('/add-review', ReviewController.add);
 
 router.get('/all-province', SeedController.allProvinces);
 router.get('/specific-cities/:id', SeedController.cities);
+router.get('/all-dropdowns', SeedController.getDropdowns);
+router.post('/update-dropdown/:id', SeedController.updateDropdowns);
 
 module.exports = router;

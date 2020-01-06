@@ -2,10 +2,11 @@ const ProductModel = require('../models/product');
 const CategoryModel = require('../models/category');
 const asyncMiddleware = require('../utils/asyncMiddleware');
 const status = require('../utils/statusCodes');
-
+const { config, uploader } = require('cloudinary');
+const uploadFile = require('../utils/fileUpload');
 const productActions = {
     getAll: asyncMiddleware(async (req, res) => {
-        let products = await ProductModel.find();
+        let products = await ProductModel.find().populate('categoryId');
         res.status(status.success.accepted).json({
             message: 'All Products',
             data: products
@@ -49,11 +50,16 @@ const productActions = {
     // Admin Actions
 
     addNew: asyncMiddleware(async (req, res) => {
-        let newProduct = new ProductModel(req.body);
+        let data = JSON.parse(req.body.data);
+        const imageUrls = await uploadFile.uploadMultiple(req.files);
+        data.images = imageUrls;
+        console.log(data);
+        let newProduct = new ProductModel(data);
         let product = await newProduct.save();
         if (product) {
             res.status(status.success.created).json({
-                message: 'Product Added'
+                message: 'Product Added',
+                data: product
             });
         } else {
             res.status(status.client.badRequest).json({

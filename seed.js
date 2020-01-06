@@ -24,6 +24,12 @@ db.once('open', async function () {
 
             await SeedModel.city.collection.insert(cityWithParentId);
         }
-        mongoose.disconnect();
     }
+    let dropObject = new SeedModel.dropdown({
+        colors: ["Yello", "Orange", "Red", "Pink", "Violet", "Blue", "Green", "Brown", "Gray", "Other"],
+        sizes: ["S", "M", "L", "XL", "2XL", "32", "36", "38", "46", "52", "13.3\"", "15.4\"", "17\"", "21\"", "23.4\""]
+    });
+
+    await dropObject.save();
+    mongoose.disconnect();
 });

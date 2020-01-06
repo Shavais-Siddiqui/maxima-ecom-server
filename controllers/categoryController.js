@@ -23,7 +23,8 @@ const categoryActions = {
         let category = await newCategory.save();
         if (category) {
             res.status(status.success.created).json({
-                message: 'Category Added'
+                message: 'Category Added',
+                data: category
             });
         } else {
             res.status(status.client.badRequest).json({
@@ -44,7 +45,6 @@ const categoryActions = {
             });
         }
     })
-
 };
 
 module.exports = categoryActions;

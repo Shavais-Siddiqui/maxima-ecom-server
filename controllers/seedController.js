@@ -21,6 +21,23 @@ const seedActions = {
                 data: cities
             });
         }
+    }),
+
+    getDropdowns: asyncMiddleware(async (req, res) => {
+        let dropdowns = await SeedModel.dropdown.find();
+        res.status(status.success.accepted).json({
+            message: 'All Dropdown',
+            data: dropdowns
+        });
+    }),
+
+    updateDropdowns: asyncMiddleware(async (req, res) => {
+        let dropdowns = await SeedModel.dropdown.findByIdAndUpdate(req.params.id, req.body);
+        if (dropdowns) {
+            res.status(status.success.accepted).json({
+                message: 'Drop Down Updated'
+            });
+        }
     })
 };
 

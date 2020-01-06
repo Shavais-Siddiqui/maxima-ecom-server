@@ -12,7 +12,7 @@ config.initialize(environment);
 app.use(cors());
 
 // Body Parser For Parsing The Request Body
-app.use(express.json());
+app.use(express.json({limit: '50mb', extended: true }));
 
 // All Api End Points Should Start With '/api'
 app.use('/api', routes);
