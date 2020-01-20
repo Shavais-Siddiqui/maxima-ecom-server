@@ -10,8 +10,14 @@ var productSchema = new Schema({
     oldPrice: Number,
     newPrice: Number,
     discount: Number,
-    ratingsCount: Number,
-    ratingsValue: Number,
+    ratingsCount: {
+        type: Number,
+        default: 0
+    },
+    ratingsValue: {
+        type: Number,
+        default: 0
+    },
     description: String,
     availibilityCount: Number,
     color: [String],

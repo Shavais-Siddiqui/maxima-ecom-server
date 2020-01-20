@@ -2,10 +2,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var reviewSchema = new Schema({
-    user: {
+    userId: {
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
+    userName: String,
     product: {
         type: Schema.Types.ObjectId,
         ref: 'Product'

@@ -43,7 +43,7 @@ const productActions = {
         let product = await ProductModel.findById(req.params.id).populate('reviews');
         res.status(status.success.accepted).json({
             message: 'Product Detail',
-            data: product
+            data: product.populate('categoryId')
         });
     }),
 
@@ -59,7 +59,7 @@ const productActions = {
         if (product) {
             res.status(status.success.created).json({
                 message: 'Product Added',
-                data: product
+                data: product.populate('categoryId')
             });
         } else {
             res.status(status.client.badRequest).json({

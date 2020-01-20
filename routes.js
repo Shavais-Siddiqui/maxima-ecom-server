@@ -11,7 +11,7 @@ const multer = require('multer');
 
 
 const storage = multer.memoryStorage();
-const multerUploads = multer({ storage }).array('images', 4);
+const multerUploads = multer({ storage }).array('images', 5);
 
 
 

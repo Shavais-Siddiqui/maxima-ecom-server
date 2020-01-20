@@ -6,6 +6,7 @@ const passwordUtils = require('../utils/passwordHash');
 const nodemailer = require("nodemailer");
 const VerificationModel = require('../models/email-verification');
 const jwt = require('../utils/jwt');
+
 // https://graph.facebook.com/me?access_token=
 // https://oauth2.googleapis.com/tokeninfo?id_token=
 
