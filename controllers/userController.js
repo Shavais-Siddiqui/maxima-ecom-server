@@ -139,7 +139,7 @@ const userActions = {
                 email: req.body.email,
                 provider: 'GOOGLE',
                 active: true,
-                imageUrl: req.body.image
+                imageUrl: req.body.photoUrl
               });
               let user = await newUser.save();
               res.status(status.success.created).json({
@@ -175,7 +175,7 @@ const userActions = {
                 email: req.body.email,
                 provider: 'FACEBOOK',
                 active: true,
-                imageUrl: req.body.image
+                imageUrl: req.body.photoUrl
               });
               let user = await newUser.save();
               res.status(status.success.created).json({
