@@ -11,6 +11,7 @@ var reviewSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Product'
     },
+    imageUrl: String,
     rate: Number,
     reviewText: String,
     date: { type: Date, default: Date.now }

@@ -21,6 +21,10 @@ var userSchema = new Schema({
         type: Boolean,
         default: false
     },
+    imageUrl: {
+        type:  String,
+        default: 'https://res.cloudinary.com/dz8zgvu8s/image/upload/v1570542639/user1.jpg'
+    },
     cart: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Product'

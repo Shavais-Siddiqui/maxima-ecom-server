@@ -6,17 +6,20 @@ const status = require('../utils/statusCodes');
 
 const reviewActions = {
     add: asyncMiddleware(async (req, res) => {
-        let ratedBefore = await ReviewModel.findOne({ user: req.body.userId, product: req.body.productId });
+        console.log(req.body)
+        let ratedBefore = await ReviewModel.findOne({ userId: req.body.userId, product: req.body.productId });
         if (ratedBefore) {
             res.status(status.client.badRequest).json({
-                message: 'Already Reviewed',
+                message: 'You Already Reviewed This Product',
             });
         } else {
             let review = new ReviewModel({
-                user: req.body.userId,
+                userId: req.body.userId,
                 product: req.body.productId,
                 rate: req.body.rate,
-                reviewText: req.body.reviewText
+                reviewText: req.body.reviewText,
+                userName: req.body.userName,
+                imageUrl: req.body.imageUrl
             });
             let savedReview = await review.save();
             await ProductModel.findByIdAndUpdate(req.body.productId, { $inc: { 'ratingsCount': 1, 'ratingsValue': req.body.rate },  $push: { reviews: savedReview._id } });
