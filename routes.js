@@ -24,6 +24,7 @@ router.post('/login', UserController.login);
 router.post('/verify-email/:id', UserController.emailVerification);
 router.get('/get-data', jwt.verifyJwt, UserController.getData);
 router.patch('/update/:id', jwt.verifyJwt, UserController.update);
+router.get('/getuser', UserController.getTest);
 
 // Cateogries
 

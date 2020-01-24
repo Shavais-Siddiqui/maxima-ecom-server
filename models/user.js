@@ -22,12 +22,15 @@ var userSchema = new Schema({
         default: false
     },
     imageUrl: {
-        type:  String,
+        type: String,
         default: 'https://res.cloudinary.com/dz8zgvu8s/image/upload/v1570542639/user1.jpg'
     },
     cart: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Product'
+        cartCount: Number,
+        productId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Product'
+        }
     }],
     wishlist: [{
         type: mongoose.Schema.Types.ObjectId,

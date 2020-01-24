@@ -218,7 +218,15 @@ const userActions = {
         message: 'Something Went Wrong While Updating User'
       });
     }
+  }),
+
+  getTest: asyncMiddleware(async (req, res) => {
+    let user = await UserModel.findById('5e294e40ef91fa00170b57f0');
+    res.json({
+      user
+    })
   })
+
 };
 
 module.exports = userActions;
