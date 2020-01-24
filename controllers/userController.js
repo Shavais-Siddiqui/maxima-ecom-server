@@ -95,7 +95,7 @@ const userActions = {
   login: asyncMiddleware(async (req, res) => {
     switch (req.body.provider) {
       case 'MAIL':
-        let user = await UserModel.findOne({ email: req.body.email }).select('+password');
+        let user = await UserModel.findOne({ email: req.body.email }).select('+password').populate('cart.productId').populate('wishlist');
         if (user) {
           console.log(user);
           let verified = await passwordUtils.comparePassword(req.body.password, user.password);
