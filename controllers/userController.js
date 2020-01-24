@@ -194,7 +194,7 @@ const userActions = {
   }),
 
   getData: asyncMiddleware(async (req, res) => {
-    let user = await UserModel.findById(req.decoded.id);
+    let user = await UserModel.findById(req.decoded.id).populate('cart.productId').populate('wishlist');
     if (user) {
       res.status(status.success.accepted).json({
         message: 'User Data',
