@@ -126,7 +126,7 @@ const userActions = {
           // console.log('body:', body);   Print the HTML for the Google homepage.
 
           if (response.statusCode == 200) {
-            let user = await UserModel.findOne({ email: req.body.email });
+            let user = await UserModel.findOne({ email: req.body.email }).populate('cart.productId').populate('wishlist');
             if (user) {
               res.status(status.success.accepted).json({
                 message: 'Already Exists',
@@ -162,7 +162,7 @@ const userActions = {
           // console.log('body:', body);   Print the HTML for the Google homepage.
 
           if (response.statusCode == 200) {
-            let user = await UserModel.findOne({ email: req.body.email });
+            let user = await UserModel.findOne({ email: req.body.email }).populate('cart.productId').populate('wishlist');
             if (user) {
               res.status(status.success.accepted).json({
                 message: 'Already Exists',
