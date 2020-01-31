@@ -82,7 +82,8 @@ const userActions = {
       if (user) {
         res.status(status.success.accepted).json({
           message: 'Approved',
-          data: user
+          data: user,
+          token: 'Bearer ' + await jwt.signJwt({ id: user.id })
         });
       }
     } else {
@@ -165,7 +166,7 @@ const userActions = {
             let user = await UserModel.findOne({ email: req.body.email }).populate('cart.productId').populate('wishlist');
             if (user) {
               res.status(status.success.accepted).json({
-                message: 'Already Exists',
+                message: `Welcome Again ${user.name}!`,
                 data: user,
                 token: 'Bearer ' + await jwt.signJwt({ id: user.id })
               });
@@ -179,7 +180,7 @@ const userActions = {
               });
               let user = await newUser.save();
               res.status(status.success.created).json({
-                message: 'Verified',
+                message: `Welcome ${user.name}`,
                 data: user,
                 token: 'Bearer ' + await jwt.signJwt({ id: user.id })
               });
